@@ -27,12 +27,12 @@ The design is fully synchronous, uses no memory macros beyond simple registers/F
 ## f. Block Diagram
 
 ### Transmit Path
-![Transmit Path](docs/telemetry_tx_path.png)
+![Transmit Path](doc/telemetry_tx_path.png)
 
 Two telemetry channels feed a round-robin arbiter, which selects one channel's data for framing. The framing FSM, CRC-8/16 generator, and frame assembler then package the data into a structured frame for serial output.
 
 ### Receive Path
-![Receive Path](docs/telemetry_rx_path.png)
+![Receive Path](doc/telemetry_rx_path.png)
 
 An incoming serial frame is located via sync detection, its fields extracted by the deframer FSM, and its CRC recomputed and checked, producing the recovered channel-ID and payload along with a match/mismatch status flag.
 
@@ -101,6 +101,6 @@ An incoming serial frame is located via sync detection, its fields extracted by 
 
 ---
 
-**Author:** [Your Name]
+**Author:** Oesmita Chakma Moon
 **Program:** Unive Mentorship Program Summer 2026
 
