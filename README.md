@@ -72,7 +72,7 @@ An incoming serial frame is located via sync detection, its fields extracted by 
 ├── sdc/            # Timing constraints
 ├── config/         # OpenROAD config.mk and flow configuration
 ├── reports/        # Synthesis, timing, power, area, utilization reports
-├── docs/           # Block diagrams, screenshots, technical report
+├── doc/           # Block diagrams, screenshots, technical report
 └── README.md
 ```
 
